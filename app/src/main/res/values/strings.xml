@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">UEE</string>
+
+    <string-array name="Spinner_items_country">
+        <item>Country</item>
+        <item>Sri Lanka</item>
+        <item>India</item>
+    </string-array>
+
+    <string-array name="Spinner_items_category">
+        <item>Category</item>
+        <item>Pantry</item>
+        <item>Snack</item>
+        <item>Chilled</item>
+        <item>Freezer</item>
+        <item>Pooja Items</item>
+    </string-array>
+
+    <string-array name="Spinner_items_subcategory">
+        <item>Sub Category</item>
+        <item>Pantry</item>
+        <item>Snack</item>
+        <item>Chilled</item>
+        <item>Freezer</item>
+        <item>Pooja Items</item>
+    </string-array>
+
+    <string-array name="Spinner_items_province">
+
+        <item>Province</item>
+        <item>Western</item>
+        <item>Sabaragamu</item>
+        <item>Southern</item>
+        <item>Northern</item>
+        <item>Central</item>
+    </string-array>
+</resources>
