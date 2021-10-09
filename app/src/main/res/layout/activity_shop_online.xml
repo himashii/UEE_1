@@ -222,7 +222,6 @@
         android:layout_height="43dp"
         android:layout_weight="1"
         android:background="@drawable/redbutton"
-        android:fontFamily="@font/metal_mania"
         android:gravity="center_horizontal"
         android:paddingTop="10dp"
         android:text="Search"

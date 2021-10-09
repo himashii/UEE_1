@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
 
     <LinearLayout
         android:id="@+id/linearLayout1"
-        android:layout_width="405dp"
-        android:layout_height="91dp"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:alpha="0.75"
-        android:background="@drawable/ic_background"
+        android:background="@drawable/it"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,12 +43,52 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="247dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25px"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:fontFamily="@font/artifika"
+                    android:text="LOGIN"
+                    android:textColor="@color/colorRed"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="-1dp"
+                    android:background="@color/colorRed">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/register"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="51px"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="REGISTER"
+                    android:fontFamily="@font/artifika"
+                    android:textColor="@color/colorRed"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="24dp"
-                android:layout_marginTop="40dp"
+                android:layout_width="247dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="-8dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -64,6 +105,7 @@
                     android:layout_width="1dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+
                     app:srcCompat="@drawable/ic_person"
                     tools:ignore="VectorDrawableCompat" />
 
@@ -75,248 +117,228 @@
                     android:layout_weight="1"
                     app:srcCompat="@drawable/ic_menu"
                     tools:ignore="MissingPrefix,VectorDrawableCompat" />
-            </LinearLayout>
 
+            </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="392dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        android:layout_marginBottom="476dp"
-        android:alpha="0.5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
-        app:srcCompat="@drawable/supermarket" />
-
-
-    <TextView
-        android:id="@+id/shop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:layout_width="378dp"
+        android:layout_height="180dp"
         android:layout_weight="1"
-        android:gravity="center"
-        android:paddingLeft="10dp"
-        android:text="RECENT ORDERS"
-        android:textColor="#FFFFFF"
-        android:textSize="32dp"
-        android:textStyle="bold"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.293" />
-
-    <LinearLayout
-        android:id="@+id/buttonLayer"
-        android:layout_width="413dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        tools:ignore="MissingConstraints"
-
-        >
-
-
-        <TextView
-            android:id="@+id/newBtn"
-            android:layout_width="38dp"
-            android:layout_height="43dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_radius"
-            android:clickable="true"
-            android:fontFamily="@font/metal_mania"
-            android:gravity="center_horizontal"
-            android:paddingTop="10dp"
-            android:text="New"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/approved"
-            android:layout_width="38dp"
-            android:layout_height="43dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/redbutton"
-            android:fontFamily="@font/metal_mania"
-            android:gravity="center_horizontal"
-            android:paddingTop="10dp"
-            android:text="Approved"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/completed"
-            android:layout_width="38dp"
-            android:layout_height="43dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/redbutton"
-            android:fontFamily="@font/metal_mania"
-            android:gravity="center_horizontal"
-            android:paddingTop="10dp"
-            android:text="Completed"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246"
+        app:srcCompat="@drawable/home"
+        tools:ignore="MissingPrefix,VectorDrawableCompat" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="290dp"
-        android:layout_height="44dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="361dp"
-        android:background="@drawable/ic_background"
+        android:layout_width="372dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0.75"
+        android:background="@drawable/it"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLayer">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:alpha="0.75"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/shop_online"
+            android:layout_width="38dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="SHOP_ONLINE"
+            android:textColor="@color/colorRed"
+            android:textSize="14dp"
+            android:textStyle="bold" />
 
-        </SearchView>
+        <View
+            android:layout_width="3dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/colorRed">
+
+        </View>
+
+        <TextView
+            android:id="@+id/specials"
+            android:layout_width="29dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:paddingLeft="13dp"
+            android:text="SPECIALS"
+            android:textColor="@color/colorRed"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorRed">
+
+        </View>
+
+        <TextView
+            android:id="@+id/recent"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:paddingLeft="1dp"
+            android:text="RECENT ORDERS"
+            android:textColor="@color/colorRed"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="394dp"
-        android:layout_height="154dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="353dp"
-        android:orientation="vertical"
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/metal_mania"
+        android:background="@drawable/cornerradius"
+        android:text="HOME DELIVERY"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593" />
 
-        <LinearLayout
-            android:layout_width="372dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/ic_background"
-            android:orientation="horizontal">
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/cornerradius"
+        android:text="WEEKLY CATALOGUE"
+        android:fontFamily="@font/metal_mania"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593" />
 
-            <LinearLayout
-                android:layout_width="146dp"
-                android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/category"
+        android:layout_width="378dp"
+        android:layout_height="180dp"
+        android:layout_weight="1"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88"
+        app:srcCompat="@drawable/catb"
+        tools:ignore="MissingPrefix,VectorDrawableCompat" />
 
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="134dp"
-                    android:layout_height="140dp"
-                    android:layout_marginTop="20px"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/banana" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="113dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/click"
+        android:text="CLICK HERE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
 
-            </LinearLayout>
+    <TextView
+        android:id="@+id/cat"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="CATEGORY"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="0.682"
+        tools:ignore="MissingConstraints" />
 
-            <LinearLayout
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginBottom="10dp"
-                android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="39dp"
+        android:alpha="0.75"
+        android:background="@drawable/it"
+        android:orientation="horizontal"
+        app:layout_constraintBaseline_toBottomOf="@drawable/catb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991">
 
-                <TextView
-                    android:id="@+id/textView28"
-                    android:layout_width="match_parent"
-                    android:layout_height="43dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="10dp"
-                    android:text="Masala Banana"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
+        <TextView
+            android:id="@+id/about_us"
+            android:layout_width="8dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="ABOUT_US"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/textView29"
-                    android:layout_width="match_parent"
-                    android:layout_height="43dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="10dp"
-                    android:text="$23.99"
-                    android:textAlignment="center"
-                    android:textColor="#FF0000"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="7dp"
+            android:background="#000000">
 
-                <TextView
-                    android:id="@+id/textView30"
-                    android:layout_width="match_parent"
-                    android:layout_height="43dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="10dp"
-                    android:text="Qty:1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
+        </View>
 
-                <TextView
-                    android:id="@+id/textView31"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="2dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/red_button"
-                    android:fontFamily="@font/metal_mania"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="10dp"
-                    android:text="Cansel Order"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-
+        <TextView
+            android:id="@+id/Contact_us"
+            android:layout_width="19dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:paddingLeft="53dp"
+            android:text="CONTACT_US"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
